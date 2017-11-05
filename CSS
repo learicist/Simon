@@ -1,0 +1,149 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+*:focus {
+	margin:0;
+	padding:0;
+	outline:none;
+}
+
+body {
+	background-image: url("https://images.unsplash.com/photo-1491592558635-f4cc68beb2e9?dpr=1&auto=format&fit=crop&w=1566&h=&q=60&cs=tinysrgb&crop=");
+	background-size:cover;
+}
+
+
+#controls {
+	background-color:rgba(153,153,153, 0.9);
+	border:2px solid white;
+	color:black;
+	height:22em;
+	border-radius:100%;
+	width:22em;
+	display:inline-block;
+	z-index:1;
+	margin:auto;
+	position:relative;
+	box-shadow:0 0 5px;
+}
+
+.powerBtn{
+	margin:auto 1em;
+}
+
+#power{
+	margin-top:-14%;
+}
+
+#on{
+	display:inline-block;
+}
+
+#off{
+	display:inline-block;
+}
+
+#offBtn{
+	background-color:white;
+	border:2px dashed DarkOrange;
+}
+
+.powerBtn{
+	background-color:white;
+	height:50px;
+	width:50px;
+	border-radius:100%;
+	border:2px dashed #4B0082;
+	box-shadow:0 0 2px;
+}
+
+.mainBtns {
+	border:1px solid blue;
+	height:20em;
+	width:20em;
+	display:inline-block;
+	z-index:-1;
+	opacity:0.7;
+}
+
+#board{
+	border-radius:100%;
+	text-align:center;
+	margin-top:5%;
+}
+
+#red {
+	background-color:red;
+	border-top-left-radius:100%;
+}
+
+#green {
+	background-color:green;
+	border-top-right-radius:100%;
+}
+
+#yellow {
+	background-color:yellow;
+	border-bottom-left-radius:100%;
+}
+
+#blue {
+	background-color:blue;
+	border-bottom-right-radius:100%;
+}
+
+#ctrlBtns{
+	margin-top:2.25em;
+	font-size:1.5em;
+}
+
+#start{
+	display:inline-block;
+	margin:auto 1em;
+}
+
+#screen{
+	width:4.1em;
+	display:inline-block;
+	margin-top:0.5em;
+	font-size:1.4em;
+}
+
+input{
+	text-align:center;
+	border-radius:10px;
+	width:4em;
+}
+
+#startBtn{
+	background-color:#4B0082;
+	height:50px;
+	width:50px;
+	border-radius:100%;
+	border:2px dashed white;
+	box-shadow:0 0 2px;
+}
+
+#strict{
+	display:inline-block;
+	margin:auto 1em;
+	vertical-align:top;
+}
+
+#strictBtn{
+	background-color:DarkOrange;
+	height:50px;
+	width:50px;
+	border-radius:100%;
+	border:2px dashed white;
+	box-shadow:0 0 2px;
+}
+
+#picCred{
+	font-size:1.25em;
+	float:right;
+	color:white;
+	text-align:center;
+}
