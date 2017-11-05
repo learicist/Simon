@@ -4,6 +4,7 @@ $(document).ready(function () {
 		userArr = [],
 		steps = 1,
 		strictFlag = true,
+		gameInProgress = false,
 		i = 0,
 		j,
 		x,
@@ -129,8 +130,11 @@ $(document).ready(function () {
 		});
 		
 		$("#startBtn").click(function () {
-			simTurn();
-			$("#display").val(steps);
+			if (!gameInProgress) {
+				gameInProgress = true;
+				simTurn();
+				$("#display").val(steps);
+			}
 		});
 		
 		
