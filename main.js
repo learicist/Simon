@@ -20,26 +20,35 @@ $(document).ready(function () {
 	$("#controls").animate({bottom: "440px"}, 3000);
 	
 	function simTurn () {
+		
 		x = setInterval(function () {
+			
 			if (simonArr[i] == 1) {
+				
 				red.css("opacity", "1");
 				redAlarm.play();
 				currSimArr.push(1);
+				
 				setTimeout(function () {
 					red.css("opacity", "0.7");
 				}, 500);
+				
 			} else if (simonArr[i] == 2) {
+				
 				green.css("opacity", "1");
 				greenAlarm.play();
 				currSimArr.push(2);
+				
 				setTimeout(function () {
 					green.css("opacity", "0.7");
 				}, 500);
 				
 			} else if (simonArr[i] == 3) {
+				
 				yellow.css("opacity", "1");
 				yellowAlarm.play();
 				currSimArr.push(3);
+				
 				setTimeout(function () {
 					yellow.css("opacity", "0.7");
 				}, 500);
@@ -48,6 +57,7 @@ $(document).ready(function () {
 				blue.css("opacity", "1");
 				blueAlarm.play();
 				currSimArr.push(4);
+				
 				setTimeout(function () {
 					blue.css("opacity", "0.7");
 				}, 500);

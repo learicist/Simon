@@ -1,77 +1,94 @@
 <!DOCTYPE html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Simon</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-	<link rel="stylesheet" href="main.css" type="text/css"/>
-</head>
+<html>
+	<head>
+		<title>Simon</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<!-- jQuery and Bootstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script 
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+			crossorigin="anonymous">
+		</script>
+		<link 
+			rel="stylesheet" 
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+			crossorigin="anonymous">
+		<link rel="stylesheet" href="main.css" type="text/css">
+	</head>
 
-<body>
-	
-	<div id="board">
-		<div id="topRow">
-			<a href="#" id="redClick">
-				<div id="red" class="mainBtns">
+	<body>
+		
+		<div id="board">
+		
+			<div id="topRow">
+				<a href="#" id="redClick">
+					<div id="red" class="mainBtns"></div>
+				</a>
+				<a href="#" id="greenClick">
+					<div id="green" class="mainBtns"></div>
+				</a>
+			</div>
 					
-				</div>
-			</a>
-			<a href="#" id="greenClick">
-				<div id="green" class="mainBtns">
-				
-				</div>
-			</a>
-		</div>
-				
-		<div id="bottomRow">
-			<a href="#" id="yellowClick">
-				<div id="yellow" class="mainBtns" >
-				
-				</div>
-			</a>
-			<a href="#" id="blueClick">
-				<div id="blue" class="mainBtns">
-				
-				</div>
-			</a>
-		</div>
-		<div id="controls">
-			<h2>SIMON</h2>
-			<div id="ctrlBtns">
-				<div id="power">
-					<div id="on">
-						<h4>On</h4>
-						<button style="cursor:pointer" type="button" id="onBtn" class="powerBtn"></button>
-					</div>
-					<div id="off">
-						<h4>Off</h4>
-						<button style="cursor:pointer" type="button" id="offBtn" class="powerBtn"></button>
-					</div>
-				</div>
-				<div id="start">
-					<h4>Start</h4>
-					<button style="cursor:pointer" type="button" id="startBtn"></button>
-				</div>
-				
-				<div id="strict">
-					<h4>Strict</h4>
-					<button style="cursor:pointer" type="button" id="strictBtn"></button>
-				</div>
+			<div id="bottomRow">
+				<a href="#" id="yellowClick">
+					<div id="yellow" class="mainBtns" ></div>
+				</a>
+				<a href="#" id="blueClick">
+					<div id="blue" class="mainBtns"></div>
+				</a>
 			</div>
-			<div id="screen">
-				<input id="display" type="text" placeholder="Steps" disabled>
-			</div>
-		</div>
-	</div>
+			
+			<div id="controls">
+				<h2>SIMON</h2>
+				
+				<div id="ctrlBtns">
+					<div id="power">
+						<div id="on">
+							<h4>On</h4>
+							<button style="cursor:pointer" type="button" id="onBtn" class="powerBtn"></button>
+						</div>
+						
+						<div id="off">
+							<h4>Off</h4>
+							<button style="cursor:pointer" type="button" id="offBtn" class="powerBtn"></button>
+						</div>
+						
+					</div><!--#power-->
+					
+					<div id="start">
+						<h4>Start</h4>
+						<button style="cursor:pointer" type="button" id="startBtn"></button>
+					</div>
+					
+					<div id="strict">
+						<h4>Strict</h4>
+						<button style="cursor:pointer" type="button" id="strictBtn"></button>
+					</div>
+				</div> <!--ctrlBtns-->
+				
+				<div id="screen">
+					<input id="display" type="text" placeholder="Steps" disabled>
+				</div>
+				
+			</div> <!--controls-->
+			
+		</div> <!--#board-->
+	</body>
 
-	<script src="main.js"></script>
-</body>
 
-
-<footer>
-	<p id="picCred">Background Photo Credit: <br>
-		Michał Grosicki
-		<br>
-		@groosheck
-	</p>
-</footer>
+	<footer>
+		<script src="main.js"></script>
+		
+		<p id="picCred">
+			Background Photo Credit: 
+			<br>
+			Michał Grosicki
+			<br>
+			@groosheck
+		</p>
+	</footer>
+	
+</html>
