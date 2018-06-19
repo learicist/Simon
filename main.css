@@ -16,7 +16,8 @@ body {
 
 @media only screen and (max-width: 600px) {
     #board {
-        display: none;
+        /*display: none;*/
+		border: 1px solid white;
     }
 }
 
