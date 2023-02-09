@@ -179,5 +179,26 @@ $(document).ready(function () {
 	$("#offBtn").click(function () {
 		location.reload();
 	});
+
+	// KICK PLAYER OUT IF SCREEN SIZE TOO SMALL
+	//Match function for Size Report
+    function sizeListener (size) {
+        if (size.matches) {
+            setTimeout(
+				window.location.href = "https://learicist.github.io/Portfolio/",
+			3000);	
+            alert("Please use a larger screen to perform this action. You will be redirected to my Portfolio, which this game can be relaunched from.");
+            console.log('test');
+        }
+    }
+
+    //Create the object that reports window size
+    const mediaObj = window.matchMedia("(max-width: 590px)");
+
+    //Call the function on page load
+    sizeListener(mediaObj);
+
+    //Create dynamic listener
+    mediaObj.addEventListener('change', sizeListener);
 	
 });
